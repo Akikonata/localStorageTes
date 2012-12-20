@@ -9,12 +9,12 @@
 
 </body>
 <script>
+  //若本地存储的内容已存在，则弹窗显示
   if(localStorage.JsonTes){
-    //取出
     var a=JSON.parse(localStorage.JsonTes);
     alert(a.attri1);
   }
-  else{
+  else{//否则初始化本地存储内容
     var Jsontest={
       attri1:15,
       attri2:"This is a string",
